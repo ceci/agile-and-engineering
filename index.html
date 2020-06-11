@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49591534-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-49591534-1');
+	</script>
+	
+	<meta charset="utf-8">
+	<title>Desenvolvimento ágil em um mundo de produtos</title>
+
+	<meta name="description" content="Desenvolvimento ágil em um mundo de produtos">
+	<meta name="author" content="Ceci Fernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/base.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="css/thoughtworks.css">
+</head>
+
+<body>
+<!--a id="languageSwitch" href="en/index.html">In English</a-->
+
+<div class="reveal linear center">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section class="cover">
+		<h1>Desenvolvimento ágil</h1>
+		<h2>num mundo de produtos</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+		</div>
+		<div class="logos">
+			<a href="https://www.agilealliance.org/agilealliancebrazil/" class="aab">
+				<img src="images/aab-logo.png" alt="Agile Alliance Brazil Logo">
+			</a>
+			<a href="http://www.thoughtworks.com" class="tw">
+				<img src="images/thoughtworks_white_logo.png" alt="ThoughtWorks Logo">
+			</a>
+		</div>
+	</section>
+	<section>
+		<section>
+			<h4>Tema do dia: produtos!</h4>
+			<div class="fragment">
+				<h1 class="attention">Produtos</h1>
+				<h1>==</h1>
+				<h1 class="attention">Incerteza</h1>
+			</div>
+		</section>
+		<section>
+			<h1 class="cursive">A gente fala <strong>muito</strong> de</h1>
+			<h2>processos, pessoas, cultura</h2>
+		</section>
+		<section>
+			<h1>Mas o que</h1>
+			<h1 class="attention">desenvolvedores</h1>
+			<h2 class="bigger">precisam saber?</h2>
+		</section>
+		<section>
+				<h1 class="cursive"><strong>Responder a mudanças</strong><br>mais que seguir um plano</h1>
+				<h2 class="fragment otherSide"><br>E em código, como faz?</h2>
+			</section>
+		</section>
+	<!-- About coding -->
+	<section data-background="#1a73ba">
+		<section>
+			<h1 class="attention">1. Feature Toggles</h1>
+		</section>
+		<section>
+			<h1 class="attention">2. Monitoramento realtime</h1>
+		</section>
+		<section>
+			<h1 class="attention">... outras técnicas "avançadas"</h1>
+		</section>
+	</section>
+	<section data-background="#1a73ba">
+		<section>
+			<h1>Mas mais básico</h1>
+			<h1 class="fragment cursive">muito menos novidade</h1>
+			<h1 class="fragment">bem <strong>+</strong> importante</h1>
+			<h3 class="fragment otherSide">(*) pra sistemas com muitas interações</h3>
+		</section>
+		<section>
+			<h1 class="attention">3. Clean Code</h1>
+		</section>
+		<section>
+			<h1 class="attention">4. Separação de responsabilidades</h1>
+			<h3 class="fragment right">Modularização</h3>
+			<h3 class="fragment right"><a href="https://martinfowler.com/bliki/BoundedContext.html">Delimitação de Contextos</a></h3>
+		</section>
+		<section>
+			<h1 class="attention">5. Testes automatizados</h1>
+			<h3 class="fragment right">Entendimento da <a href="https://martinfowler.com/bliki/TestPyramid.html">pirâmide de testes</a></h3>
+			<h3 class="fragment right">e da <a href="https://martinfowler.com/articles/practical-test-pyramid.html">recente atualização</a></h3>
+		</section>
+		<section>
+				<h1 class="attention">6. Entrega contínua</h1>
+				<h3 class="fragment right">Automação de build e deploy</h3>
+				<h3 class="fragment right">Promoção de código em ambientes</h3>
+				<h4 class="fragment right cursive">(com dados cada vez mais reais)</h4>
+		</section>
+		<section>
+			<h1 class="attention">7. Entendimento de arquiteturas</h1>
+			<h3 class="fragment right">Micro-serviços</h3>
+			<h3 class="fragment right">Camadas</h3>
+		</section>
+	</section>
+
+	<section data-background="#f78f31">
+		<section>
+			<h4>Mas não é só!
+			<h1 class="fragment">Por desenvolvedor...</h1>
+			<h1 class="fragment">você entende quem?</h1>
+		</section>
+		<section>
+			<h1>Programadores
+				<span class="fragment">e QAs</span>
+				<span class="fragment">e BAs</span>
+				<span class="fragment">e UXers</span>
+				<span class="fragment">e</span><span class="fragment">tc...</span>
+			</h1>
+		</section>
+	</section>
+
+	<!-- About stories and criteria -->
+	<section data-background="#6a2569">
+		<section>
+			<h1><a href="https://www.agilealliance.org/glossary/three-amigos/">Los 3 Amigos</a></h1>
+			<h2 class="fragment">Colaboração contínua</h2>
+			<h2 class="fragment">Pareamento entre != papéis</h2>
+		</section>
+		<section>
+			<h4>3 amigos onde?</h4>
+			<h1 class="fragment">Inceptions</h1>
+			<h1 class="fragment">Critérios de aceite</h1>
+		</section>
+		<section>
+			<h4>HDD</h4>
+			<h1 class="fragment left" data-fragment-index="2"><strong>H</strong>ypothesis</h1>
+			<h1 class="fragment left" data-fragment-index="1"><strong>D</strong>riven</h1>
+			<h1 class="fragment left" data-fragment-index="0"><strong>D</strong>evelopment</h1>
+		</section>
+		<section>
+			<img src="./images/hdd.jpg" alt="exemplo de HDD" style="transform: rotate(-6deg);">
+		</section>
+	</section>
+
+	<!-- Métricas e QA -->
+	<section data-background="#11aa58">
+		<section>
+			<h1 class="attention bigger">Métricas!</h1>
+			<h2 class="fragment cursive otherSide" style="margin-right: 4em;">automatizadas<br>de preferência...</h2>
+		</section>
+		<section>
+			<h1>Analytics</h1>
+			<h1 class="fragment">Dashboard próprio</h1>
+		</section>
+		<section>
+			<h4>E, com métricas...</h4>
+			<h1 class="fragment">Testes A/B</h1>
+			<h1 class="fragment">Testes com usuários</h1>
+		</section>
+	</section>
+	<section>
+		<h1 class="cursive">Tantas coisas, mas...</h1>
+	</section>
+	<section>
+		<section>
+			<h4>Em resumo</h4>
+			<h1 class="fragment cursive bigger">"Qualquer prática que ajuda a<br>reduzir o custo de mudança de<br>direção ou experimentação"</h1>
+			<h3 class="fragment cursive otherSide">Hugo Corbucci</h3>
+		</section>
+	</section>
+
+	<section class="cover">
+		<h1>Desenvolvimento ágil</h1>
+		<h2>num mundo de produtos</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+		</div>
+		<div class="logos">
+			<a href="https://www.agilealliance.org/agilealliancebrazil/" class="aab">
+				<img src="images/aab-logo.png" alt="Agile Alliance Brazil Logo">
+			</a>
+			<a href="http://www.thoughtworks.com" class="tw">
+				<img src="images/thoughtworks_white_logo.png" alt="ThoughtWorks Logo">
+			</a>
+		</div>
+	</section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>
